@@ -6,11 +6,13 @@ import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Poppins } from "next/font/google";
-import NavbarSidebar from "./navbar-sidebar";
+
 import { useState } from "react";
 import { MenuIcon } from "lucide-react";
 import { useTRPC } from "@/trpc/client";
 import { useQuery } from "@tanstack/react-query";
+import NavbarSidebar from "./navbar-sidebar";
+
 
 const poppins = Poppins({
   subsets: ["latin"],
